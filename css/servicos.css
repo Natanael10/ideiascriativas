@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 90vh;
+	height: 80%;
 	box-shadow: 0 25px 30px rgba(0,0,0,.7);
 }
 
@@ -75,16 +75,23 @@
 		height: 120vh;
 	}
 
+	.containerserv{
+		width: 85%;
+		padding: 0px;
+	}
+
 	.containerserv ul li{
-		width: 40%;
-		margin-left: 40px;
+		width: 30%;
+		margin-left: 20px;
+		padding-left: 10px;
+		margin: 70px 50px 50px 10%;
 	}
 }
 
 @media screen and (max-width: 750px){
 	
 	#servicos{
-		height: 150vh;
+		height: 10%;
 	}
 
 	.containerserv{
@@ -94,9 +101,10 @@
 
 	.containerserv ul li{
 		float: none;
-		width: 90%;
+		width: 80%;
 		margin-left: 5%;
 		margin-right: 5%;
+		margin: 50px 50px 50px 10%;
 	}
 }
 
