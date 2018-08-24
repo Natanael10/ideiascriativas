@@ -35,7 +35,7 @@
 	list-style: none;
 	float: left;
 	width: 20%;
-	height: 180px;
+	height: 200px;
 	margin: 80px 10px 15px 40px;
 	box-sizing: border-box;
 }
@@ -68,7 +68,7 @@
 	color: black;
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px){/*TELAS MENOR QUE 1250 VAI TER ESSE CSS*/
 
 	#servicos{
 		
@@ -81,14 +81,14 @@
 	}
 
 	.containerserv ul li{
-		width: 30%;
-		margin-left: 20px;
-		padding-left: 10px;
-		margin: 70px 50px 50px 10%;
+		width: 40%;
+		float-left: 20px;
+		margin: 4% 0px 5% 5%;
+		margin-right: 5%;
 	}
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
 	
 	#servicos{
 		height: 10%;
@@ -102,9 +102,9 @@
 	.containerserv ul li{
 		float: none;
 		width: 80%;
-		margin-left: 5%;
 		margin-right: 5%;
 		margin: 50px 50px 50px 10%;
+
 	}
 }
 
