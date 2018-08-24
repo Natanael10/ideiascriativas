@@ -1,0 +1,536 @@
+/*GERAL*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Open Sans", Helvetrica, Arial, sans-serif;
+	color: #4d4d4d;
+	background: black;
+}
+
+h1,h2,h3{
+	margin: 0;
+	font-family: "Roboto Salab",Helvetrica, Arial, sans-serif;
+	font-weight: 700; 
+}
+
+/* NAVEGAÇÃO */
+nav{
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(0,0,0,.8);
+	font-family: "Arial";
+	display: flex;
+	position: fixed;
+	z-index: 5;
+}
+
+nav > a{
+	text-decoration: none;
+	color: #f1f1f1;
+	font-weight: 700;
+	font-size: 28px;
+	font-family: Pacifico, serif;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	width: 100%;
+	text-align: center;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 2px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+}
+nav a:hover{
+	background-color: #f4f4f4;
+	color: #555;
+}
+label[for="bt_menu"]{
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+	font-family: "Arial";
+	text-align: center;
+	font-size: 35px;
+	cursor: pointer;
+	font-weight: bold;
+	width: 50px;
+	height: 38px;
+}
+#bt_menu{
+	display: none;
+}
+label[for="bt_menu"]{
+	display: none;
+	position: fixed;
+	z-index: 10;
+}
+
+@media(max-width: 810px){ /*QUANDO A TELA TIVER ESSE TAMANHO A BARRA SAI DA ESQUERDA*/
+	nav a{
+		width: 100%;
+	}
+
+	nav a:hover{
+		font-size: 20px ;
+		text-align: center;
+		width: 100%;
+		color: #000;
+	}
+
+	nav ul li{
+		width: 100%;
+		margin-bottom: 10px;
+		float: none;
+	}
+	nav{
+		margin-top: 0;
+		margin-left: -120%;
+		transition: all .4s;
+	}
+
+	#bt_menu:checked ~ nav{
+		margin-left: 0;
+	}
+
+	label[for="bt_menu"]{
+		display: block;
+	}
+
+}
+
+
+/* CABEÇALHO */
+header{
+	margin: 0;
+	padding: 0;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 11%;
+}
+
+header p{
+	margin-bottom: 2em;
+}
+
+
+/*LOGO DA NAV BAR*/
+img#logo{
+	width:100px;/*TAMANHO DA LOGO MAIOR*/
+	height:100px;/*TAMANHO DA LOGO MAIOR*/
+
+	float:left;
+	display: block;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 0;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+
+.wavy1{ /*BORDA EM FORMA DE "V" ABAIXO DO VIDEO*/
+	position: relative;
+	z-index: 0;
+}
+
+.wavy1:before{
+	content: '';
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top: -8%;
+	left: 0;
+	background: #137EA5;
+	transform: skewY(5deg);
+}
+
+.wavy1:after{
+	content: '';
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top: -8%;
+	right: 0;
+	background: #137EA5;
+	transform: skewY(-5deg);
+}
+/*FIM DO CSS DA BORDA "V" (WAVY)*/
+
+
+/* --------------------EMPRESA--------------------------- */
+#empresa{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding: 10% 10%;
+	background: linear-gradient(360deg, white, #5CCAF2, #0BB0EC, #14799E );
+	background-size: 50% 400%;
+	animation: animate 10s ease infinite;
+	color: #f1f1f1;
+	top: 0;
+}
+
+#empresa h2{
+
+	font-size: 60px;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 2;
+	font-family: 'Kaushan Script', cursive;
+	letter-spacing: 8px;
+}
+#empresa p{
+	text-align: justify;
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+	text-align: center;
+	font-size: 20px;
+	text-indent: 100px;
+}
+
+#empresa .buton{
+	background-color: #FFF;
+	color: rgb(62, 93, 104);
+}
+
+.buton{
+	text-decoration: none;
+	padding: 10px 30px;
+	font-size: .9em;
+	border-radius:3px;
+	border-radius: 10px 10px;
+	box-shadow: 2px 2px 2px 2px;
+}
+/*-- EFEITOS DE ANIMAÇÃO DOS BOTÃO --*/
+[data-anime] {
+	opacity: 0;
+	transition: 4s;
+}
+
+[data-anime="left"] {
+	transform: translate3d(-600px, 0 , 0 );
+}
+
+[data-anime="right"] {
+	transform: translate3d(400px, 0 , 0 );
+}
+
+[data-anime].animate {
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+/*-----------------------------------------------------------------------*/
+
+/*CSS de TRABALHOS está no ARQUIVO---> trabalho.css*/
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+
+/*CSS da equipe está no ARQUIVO---> equipe.css*/
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+
+/*CSS da VAMOS CONVERSA? está no ARQUIVO---> msn.css*/
+
+/*-----------------------------------------------------------------------*/
+
+
+/*
+CONTATO
+*/
+
+.msn h2{/* TITULO */
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 40px;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	font-family: 'Kaushan Script', cursive;
+}
+
+#box{
+	display: inline-block;
+	position: absolute;
+	background: white;
+	margin: 100vh auto;
+	left: 2%;
+	width: 45%;
+	height: 300px;
+	box-shadow: 0 25px 30px rgba(0,0,0,.7);
+	margin-bottom: 0;
+}
+
+
+#box2{
+	display: inline-block;
+	position: absolute;
+	width: 45%;
+	height: 300px;
+	left: 52%;
+	background: white;
+	margin: 100vh auto;
+	border: 2px solid #FFF;
+	border-radius: 10px;
+	box-shadow: 0 25px 30px rgba(0,0,0,.7);
+	margin-bottom: 0;
+}
+
+.map{
+	width: 100%;
+	height: 100%;
+}
+
+#msn i{
+	color: black;
+	align-items: center;
+	text-align: center;
+	float: left;
+	padding-left: 5px;
+	font-size: 23px;
+}
+
+#msn h4{
+	color: black;
+	font-family: "Arial";
+}
+
+
+/*
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 100px;
+
+}
+
+#contato i{
+	text-align: right;
+}
+*/
+
+/*
+FOOTER
+*/
+ 
+footer{
+	text-align: center;
+	padding: 15px;
+	background-color: #4d4d4d;
+	color: #f1f1f1;
+	height: 100px;
+ }
+
+ /*
+MEDIA QUERIES
+ */
+@media screen and (min-width: 768px){
+	
+	img#logo{
+		width:50px;/*TAMANHO DA LOGO MENOR*/
+		height:50px;/*TAMANHO DA LOGO MENOR*/
+	}
+
+	.menu-icon{
+		display: none;
+	}
+
+	/* NAVEGACAO */
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+	header{
+	 	height: 600px;
+	 	height: 60vh; /*view port (toda area intwrna do navegador)*/
+	 	justify-content: center;
+	 }
+
+	#empresa p{
+		text-align: justify;
+		font-size: 20px;
+	}
+
+	/*
+	trabalhos
+	*/
+	/*
+	#trabalhos{
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	#trabalhos h2{
+		width: 100%;
+		text-align: center;
+
+	}
+	#trabalhos img{
+		width: 33.3333333333%;
+	}
+	*/
+	/*PARTE DO SLIDE DE TRABALHOS*/
+
+
+
+
+
+
+
+	/*
+	CONTATO
+	
+	#contato{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	
+	}
+	#contato h2,
+	#contato{
+		width: 100%;
+	}
+	*/
+
+ }
+
+
+ @media screen and (max-width: 768px){
+
+
+ 	header{
+		padding: 35%;
+	}
+
+	/*EMPRESA*/
+	#empresa p{
+		text-align: justify;
+	}
+	/*FIM EMPRESA*/
+	
+ 	#msn{
+ 		height: 20% auto;
+ 	}
+
+ 	#msn p{
+ 		height: 20% auto;
+ 	}
+
+ 	.map{
+ 		width: 100%;
+ 		height: 100%;
+ 	}
+
+ 	.msn h2{/* TITULO */
+		margin-top: 20px;
+		margin-bottom: 40px;
+		font-size: 26px;
+	}
+
+	#msn i{
+		padding-left: 5px;
+		font-size: 28px;
+	}
+
+ 	#box{
+		background: white;
+		box-sizing: 50px;
+		height: 350px;
+		width: 95%;
+ 	}
+
+ 	#box2{
+ 		position: absolute;
+		margin-right: 5%;
+		width: 95%;
+		height: 300px;
+		margin: 160vh -50%;/*MARGEM DA ULTIMA BOX RESPONSIVE PRO FOOTER*/
+		margin-bottom: 0;
+ 	}
+
+	/*
+	#trabalhos h2{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #FFF;
+	}*/
+}
+
+
+@media screen and (max-width: 600px){
+
+	/* CABEÇALHO */
+	header{
+		padding: 50%;
+	}
+
+	/*EMPRESA*/
+	#empresa p{
+		text-align: justify;
+	}
+
+	/*CSS PARA A PARTE DO CONTATO*/
+
+ 	.msn h2{/* TITULO */
+		margin-top: 20px;
+		margin-bottom: 40px;
+		font-size: 28px;
+	}
+
+ 	#box{
+		background: white;
+		margin: 600px auto;
+ 	}
+
+ 	
+ 	#box2{
+		margin: 1000px -50%;/*MARGEM DA ULTIMA BOX RESPONSIVE PRO FOOTER*/
+		width: 95%;
+		margin-bottom: 0px;
+		height: 340px;
+ 	}
+
+	#msn h4{
+		font-size: 18px;
+	}
+	/*FIM DO CSS DO CONTATO*/
+}
+

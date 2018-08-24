@@ -1,0 +1,95 @@
+#msn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160vh;
+    background-image: url("../img/black.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+
+#box3{/*BACKGROUND BRANCO (VAMOS CONVERSAR?*/
+    left: 50%;
+    width: 600px;
+    padding: 30px 40px;
+    overflow: hidden;
+    background: rgba(255,255,255,.7);
+    transform: translate(-50%);
+	display: inline-block;
+	position: absolute;
+	align-items: center;
+    box-shadow: 0 20px 30px rgba(0,0,0,.7);
+    border-radius: 0 0 20px 20px;
+}
+
+#box3 h2{/*TITLE BACKGROUN (Vamos Conversar!)*/
+	text-align: center;
+    margin: 30px 0 30px;
+}
+
+#box3 .form-input{
+    position: relative;
+    margin: 10px 0;
+}
+
+#box3 form input{
+    outline: none;
+	height:40px;
+    padding:10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.5);
+    background: transparent;
+    font-size: 18px;
+}
+
+
+#box3 form textarea{
+
+    outline: none;
+    height: 150px;
+    padding:10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.5);
+    background: transparent;
+    font-size: 18px;
+}
+
+#box3 form button{
+	background-color: #e91e63;
+    color: #FFF;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+#box3 form button:hover{
+	opacity:.85;
+    cursor: pointer;
+    background: #0090ff;
+    font-weight: bold;
+}
+
+
+/*---------------------- MOBILE -----------------------------*/
+@media screen and (max-width: 768px){
+
+    #msn{
+    height: 232vh;
+    }
+
+    #box3{/*BACKGROUND BRANCO*/
+        width: 75%;
+        overflow: hidden;
+        background: #FFF;
+        height: 80vh;
+        display: inline-block;
+        position: absolute;
+        align-items: center;
+        box-shadow: 0 20px 30px rgba(0,0,0,.7);
+    }
+}
