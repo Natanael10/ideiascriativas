@@ -1,3 +1,12 @@
+#equipe .curvtitle h2{
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Kaushan Script', cursive;
+	padding-top: 20px;
+	color: black;
+	letter-spacing: 8px;
+}
+
 #equipe{
 	background-color: #FFF;
 	width: 100%;
@@ -17,18 +26,8 @@
 	z-index: 0;
 	display: flex;
 	box-sizing: border-box;
-
 }
 
-
-#equipe .curvtitle h2{
-	text-align: center;
-	font-size: 60px;
-	font-family: 'Kaushan Script', cursive;
-	padding-top: 20px;
-	color: black;
-	letter-spacing: 8px;
-}
 /*
 #equipe .curvtitle{
 	position: absolute;
@@ -43,17 +42,23 @@
 }*/
 
 .boxfot{
+	transform: translate3d(0,0,0);
 	list-style: none;
 	position: relative;
-	width: 20vw;
-	height: 100%;
+	width: 20%;
+	height: 70vh;
+	max-height: 600px;
+	color: white;
+	overflow: hidden;
+
 	border-right: 1px solid #000;
-	transition: .5s;
+	transition: width 0.5s ease;
 	z-index: 2;
 	float: left;
 	background-position: center;
 	background-size: cover;
 	background-position: left;
+	
 }
 
 
@@ -75,14 +80,15 @@
 }
 
 .boxfot:hover{
-	width: 45vw;
+	width: 40% !important;
 }
 
 .boxfot:hover h3{
 	bottom: 0;
 	font-size: 20px;
 	display: block;
-	background: linear-gradient(0deg, #000, transparent);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
+	transform: 0.5s ease;
 }
 
 .boxfot p{
@@ -123,7 +129,7 @@
 .group-equipe .boxfot:nth-child(4){
 	background-image: url("../img/foto 05.png");
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 }
 .group-equipe .boxfot:nth-child(5){
 	background-image: url("../img/foto 06.png");
