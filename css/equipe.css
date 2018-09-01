@@ -1,10 +1,13 @@
-#equipe .curvtitle h2{
+#equipe h2{
 	text-align: center;
 	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	z-index: 2;
 	font-family: 'Kaushan Script', cursive;
-	padding-top: 20px;
-	color: black;
 	letter-spacing: 8px;
+	color: black;
+	padding-top: 20px;
 }
 
 #equipe{
@@ -19,7 +22,7 @@
 	background: #fff;
 	width: 85%;
 	height: 60vh;
-	top: 10%;
+	top: 15%;
 	left: 7%;
 	align-items: center;
 	box-shadow: 0 25px 30px rgba(0,0,0,.7);
@@ -134,22 +137,12 @@
 .group-equipe .boxfot:nth-child(5){
 	background-image: url("../img/foto 06.png");
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 }
 .group-equipe .boxfot:nth-child(6){
 	background-image: url("../img/foto 04.png");
 	background-size: cover;
-	background-position: center;
-}
-.group-equipe .boxfot:nth-child(7){
-	background-image: url("../img/foto 07.jpeg");
-	background-size: cover;
-	background-position: center;
-}
-.group-equipe .boxfot:nth-child(8){
-	background-image: url("../img/foto 08.jpeg");
-	background-size: cover;
-	background-position: center;
+	background-position: center center;
 }
 
 
@@ -191,4 +184,34 @@
 
 @media screen and (max-width: 600px){
 
+	#equipe h2{
+		padding-top: 15%;
+		font-size: 40px;
+	}
+
+	.boxfot{
+		width: 20%;
+		height: 55vh;
+	}
+
+	.group-equipe{
+		background: ;
+		width: 90%;
+		height: 60vh;
+		top: 5%;
+	}
+
+	.boxfot:hover{
+		width: 55% !important;
+	}
+
+	.group-equipe .boxfot:nth-child(2){
+		background-repeat: no-repeat;
+		background-position: 60% center;
+	}
+
+	.group-equipe .boxfot:nth-child(6){
+		background-repeat: no-repeat;
+		background-position: 30% center;
+	}
 }

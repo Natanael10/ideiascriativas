@@ -502,9 +502,14 @@ MEDIA QUERIES
 		padding: 50%;
 	}
 
+	#empresa h2{
+		font-size: 40px;
+	}
+
 	/*EMPRESA*/
 	#empresa p{
 		text-align: justify;
+		font-size: 17px;
 	}
 
 	/*CSS PARA A PARTE DO CONTATO*/
