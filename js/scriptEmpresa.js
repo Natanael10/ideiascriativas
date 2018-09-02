@@ -18,7 +18,7 @@ const debounce = function(func, wait, immediate){
 
 
 const target = document.querySelectorAll('[data-anime]'); //Constante para selecionar todos os elementos com [data-anime] da classe CSS
-const animationClass = 'animate';
+const animationClass = 'animates';
 
 function animeScroll(){
 	const windowTop = window.pageYOffset + ((window.innerHeight * 4) / 5);

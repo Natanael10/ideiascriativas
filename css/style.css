@@ -146,6 +146,8 @@ img#logo{
 	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
 
+/*CSS ANIMAÇÃO DO MOUSE NA CLASSE: mouse_animetion.css*/
+
 .wavy1{ /*BORDA EM FORMA DE "V" ABAIXO DO VIDEO*/
 	position: relative;
 	z-index: 0;
@@ -185,7 +187,7 @@ img#logo{
 	padding: 10% 10%;
 	background: linear-gradient(360deg, white, #5CCAF2, #0BB0EC, #14799E );
 	background-size: 50% 400%;
-	animation: animate 10s ease infinite;
+	animation: animates 10s ease infinite;
 	color: #f1f1f1;
 	top: 0;
 }
@@ -235,7 +237,7 @@ img#logo{
 	transform: translate3d(400px, 0 , 0 );
 }
 
-[data-anime].animate {
+[data-anime].animates {
 	opacity: 1;
 	transform: translate3d(0px, 0px, 0px);
 }
