@@ -53,19 +53,42 @@
 .containerserv ul li h3{
 	text-align: center;
 	margin-top: 15px;
+	color: #0A5F93;
 }
 
 .containerserv ul p{
 	text-align: justify;
 }
 
+.barra-header-serv{
+	content: "";
+	position: absolute;
+	width: 360px;
+	height: 6px;
+	margin-top: 32px;
+	background-color: #FF3F13;
+
+}
+
 .containerserv h2{
 	font-size: 60px;
 	text-align: center;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Trebuchet MS', cursive;
+	font-weight: bold;
 	position: relative;
 	letter-spacing: 8px;
-	color: black;
+	color: #0A5F93;
+}
+
+.barra-header-serv2{
+	content: "";
+	position: absolute;
+	width: 360px;
+	height: 6px;
+	margin-top: -37px;
+	right: 100px;
+	background-color: #FF3F13;
+
 }
 
 @media screen and (max-width: 1250px){/*TELAS MENOR QUE 1250 VAI TER ESSE CSS*/
@@ -73,6 +96,15 @@
 	#servicos{
 		
 		height: 120vh;
+	}
+
+	.barra-header-serv{
+		width: 250px;
+	}
+
+	.barra-header-serv2{
+		right: 80px;
+		width: 250px;
 	}
 
 	.containerserv{
@@ -88,11 +120,35 @@
 	}
 }
 
+@media screen and (max-width: 950px){
+	.barra-header-serv{
+		width: 180px;
+	}
+
+	.barra-header-serv2{
+		right: 70px;
+		width: 180px;
+	}
+}
+
 @media screen and (max-width: 800px){
 	
 	#servicos{
 		height: 10%;
 	}
+
+	.barra-header-serv{
+		right: 50%;
+		margin-top: -10px;
+		width: 200px;
+	}
+
+	.barra-header-serv2{
+		left: 50%;
+		margin-top: 10px;
+		width: 200px;
+	}
+
 
 	.containerserv{
 		width: 85%;
@@ -104,7 +160,6 @@
 		width: 80%;
 		margin-right: 5%;
 		margin: 50px 50px 50px 10%;
-
 	}
 }
 
