@@ -540,7 +540,8 @@ MEDIA QUERIES
 	}
 
 	#empresa h2{
-		font-size: 40px;
+		margin-top: 20px;
+		font-size: 50px;
 	}
 
 	/*EMPRESA*/
@@ -549,7 +550,18 @@ MEDIA QUERIES
 		font-size: 17px;
 	}
 
+	#empresa p span{
+		font-weight: bold;
+		color: #FFFB47;
+		font-size: 22px;
+		letter-spacing: 2px;
+	}
+
 	/*CSS PARA A PARTE DO CONTATO*/
+
+	.barra-header-emp{
+		margin-top: 20px;
+	}
 
  	.msn h2{/* TITULO */
 		margin-top: 20px;

@@ -10,8 +10,10 @@
     z-index: -1;
     overflow: hidden;
 	margin-top: 0px;
-	left: 0;
 	top: 0;
+	left: 0;
+	min-height: 50%;
+	min-width: 100%;
 }
 
 #vid{
@@ -19,7 +21,6 @@
 	left: 0;
 	width: 100%;
 	align-items: center;
-	max-width: 1400px;
 	display: flex;
 	overflow: hidden;
 }
@@ -27,22 +28,4 @@
 #vid video{
 	min-width: 100%;
 	min-height: 100%;
-}
-
-
-@media screen and (max-width: 900px){
-	#vid{
-		width: 120%;
-		left: -100;
-	}
-}
-
-@media screen and (max-width: 600px){
-	#vid{
-		width: 150%;
-	}
-
-	.container{
-		margin-left: -200px;
-	}
 }
