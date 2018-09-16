@@ -66,7 +66,8 @@
 	width: 360px;
 	height: 6px;
 	margin-top: 32px;
-	background-color: #003A66;
+	background-color: #3F83BE;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .containerserv h2{
@@ -86,8 +87,8 @@
 	height: 6px;
 	margin-top: -37px;
 	right: 100px;
-	background-color: #003A66;
-
+	background-color: #3F83BE;
+	border-radius: 10px 10px 10px 10px;
 }
 
 

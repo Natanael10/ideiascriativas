@@ -12,7 +12,7 @@ body{
 
 h1,h2,h3{
 	margin: 0;
-	font-family: "Roboto Salab",Helvetrica, Arial, sans-serif;
+	font-family: "Roboto Salab", Helvetrica, Arial, sans-serif;
 	font-weight: 700; 
 }
 
@@ -22,19 +22,22 @@ nav{
 	align-items: center;
 	width: 100%;
 	background-color: rgba(0,0,0,.8);
-	font-family: "Arial";
+	font-family: "Trebuchet MS", Helvetrica, Arial, sans-serif ;
 	display: flex;
 	position: fixed;
 	z-index: 5;
+	box-shadow: 0px 10px 50px 0px black;
+	letter-spacing: 2px;
 }
 
 nav > a{
 	text-decoration: none;
 	color: #f1f1f1;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 28px;
-	font-family: Pacifico, serif;
+	font-family: "Trebuchet MS", Pacifico, serif;
 }
+
 nav ul{
 	list-style: none;
 	padding: 0;
@@ -61,34 +64,39 @@ nav a:hover{
 	background-color: #f4f4f4;
 	color: #555;
 }
+
 label[for="bt_menu"]{
 	padding: 10px;
 	background-color: #000;
 	color: #fff;
-	font-family: "Arial";
+	font-family: "Trebuchet MS", Helvetrica, Arial, sans-serif;
 	text-align: center;
 	font-size: 35px;
 	cursor: pointer;
 	font-weight: bold;
 	width: 50px;
 	height: 38px;
+	border-radius: 10px 15px 15px 0px;
+	box-shadow: 0px 2px 80px 10px black;
 }
+
 #bt_menu{
 	display: none;
 }
+
 label[for="bt_menu"]{
 	display: none;
 	position: fixed;
 	z-index: 10;
 }
 
-@media(max-width: 810px){ /*QUANDO A TELA TIVER ESSE TAMANHO A BARRA SAI DA ESQUERDA*/
+@media(max-width: 850px){ /*QUANDO A TELA TIVER MENOR QUE 850px, A BARRA ENTRA NO BOTÃO MENU*/
 	nav a{
 		width: 100%;
 	}
 
 	nav a:hover{
-		font-size: 20px ;
+		font-size: 18px ;
 		text-align: center;
 		width: 100%;
 		color: #000;
@@ -97,22 +105,31 @@ label[for="bt_menu"]{
 	nav ul li{
 		width: 100%;
 		margin-bottom: 10px;
-		float: none;
+		color: #000;
 	}
+
 	nav{
 		margin-top: 0;
 		margin-left: -120%;
 		transition: all .4s;
+		height: 100%;
 	}
 
 	#bt_menu:checked ~ nav{
 		margin-left: 0;
 	}
 
+	#bt_menu:checked ~ label[for="bt_menu"]{
+		box-shadow: 0px 2px 80px 0px white;
+	}
+
 	label[for="bt_menu"]{
 		display: block;
 	}
 
+	nav a i, .fa{
+		padding: 7px;
+	}
 }
 
 
@@ -164,6 +181,7 @@ img#logo{
 	background: linear-gradient(160deg, #175081,   #175081);
 	transform: skewY(5deg);
 	border-bottom: 6px dashed white;
+	box-shadow: -15px -8px 40px -5px black;
 }
 
 .wavy1:after{
@@ -178,7 +196,7 @@ img#logo{
 	background: linear-gradient(200deg, #175081,  #175081);
 	transform: skewY(-5deg);
 	border-bottom: 6px dashed white;
-	/*box-shadow: 0px 20px 90px 0px white;*/
+	box-shadow: 20px -8px 40px -5px black;
 }
 /*FIM DO CSS DA BORDA "V" (WAVY)*/
 
@@ -265,7 +283,7 @@ img#logo{
 }
 
 [data-anime="left"] {
-	transform: translate3d(-600px, 0 , 0 );
+	transform: translate3d(-400px, 0 , 0 );
 }
 
 [data-anime="right"] {
@@ -388,7 +406,7 @@ footer{
  /*
 MEDIA QUERIES
  */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 850px){ /*QUANDO O TAMANHO DA TELA ESTIVER MAIOR QUE 850*/
 	
 	img#logo{
 		width:50px;/*TAMANHO DA LOGO MENOR*/
@@ -404,6 +422,7 @@ MEDIA QUERIES
 		flex-direction: row;
 		justify-content: space-around;
 	}
+
 	nav ul{
 		flex-direction: row;
 		width: 70%;
