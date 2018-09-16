@@ -73,7 +73,7 @@
 .containerserv h2{
 	font-size: 60px;
 	text-align: center;
-	font-family: 'Trebuchet MS', Corbel;
+	font-family: 'Trebuchet MS', Corbel, Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
 	letter-spacing: 8px;
@@ -90,6 +90,89 @@
 	background-color: #FF3F13;
 
 }
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Balão de Informação*/
+
+
+
+
+.informacao{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.balao{
+	width: 400px;
+	height: 450px;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	box-shadow: 10px 5px 50px 5px black;
+}
+
+.balao h3{
+	margin-top: 20px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.balao p{
+	text-align: justify;
+	margin-top: 10px;
+	text-indent: 30px;
+	font-size: 20px;
+}
+
+
+.balao ul li{
+	margin-left: 40px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+.close{/*BOTÃO DE FECHAR*/
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+/* Animação Balão */
+/*
+@keyframes modal {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -80px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0 , 0 , 0);
+	}
+}
+*/
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Media Keryes*/
+
+
+
 
 @media screen and (max-width: 1250px){/*TELAS MENOR QUE 1250 VAI TER ESSE CSS*/
 
@@ -140,13 +223,13 @@
 	.barra-header-serv{
 		right: 50%;
 		margin-top: -10px;
-		width: 200px;
+		width: 180px;
 	}
 
 	.barra-header-serv2{
 		left: 50%;
 		margin-top: 10px;
-		width: 200px;
+		width: 180px;
 	}
 
 
@@ -163,70 +246,47 @@
 	}
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
-
-/*Balão de Informação*/
-.informacao{
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.7);
-	position: fixed;
-	top: 0;
-	z-index: 10;
-	justify-content: center;
-	align-items: center;
-	display: none;
-}
-
-.balao{
-	width: 400px;
-	height: 450px;
-	background-color: white;
-	border-radius: 5px;
-	text-align: center;
-	padding: 20px;
-	position: relative;
-}
-
-.balao h3{
-	margin-top: 20px;
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-.balao p{
-	text-align: justify;
-	margin-top: 10px;
-	text-indent: 30px;
-	font-size: 20px;
-}
-
-
-.balao ul li{
-	margin-left: 40px;
-	text-align: justify;
-	font-size: 20px;
-}
-
-.close{/*BOTÃO DE FECHAR*/
-	position: absolute;
-	top: 0;
-	right: 14px;
-	font-size: 42px;
-	transform: rotate(45deg);
-	cursor: pointer;
-}
-
-/* Animação Balão */
-/*
-@keyframes modal {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -80px, 0);
+@media screen and (max-width: 400px){
+	#servicos{
+		height: 10%;
 	}
-	to {
-		opacity: 1;
-		transform: translate3d(0 , 0 , 0);
+
+	.containerserv h2{
+		font-weight: bold;
+		font-size: 40px;
 	}
+
+	.barra-header-serv{
+		right: 50%;
+		margin-top: -10px;
+		width: 120px;
+	}
+
+	.barra-header-serv2{
+		left: 50%;
+		margin-top: 10px;
+		width: 120px;
+	}
+
+	.balao{
+		width: 255px;
+		height: 420px;
+		border-radius: 30px;
+	}
+
+	.balao p{
+		font-size: 17px;
+	}
+
+	.balao ul li{
+		margin-left: 35px;
+		text-align: justify;
+		font-size: 18px;
+	}
+
+	.img-informacao{
+		background: cover;
+	}
+
 }
-*/
+
