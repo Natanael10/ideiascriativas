@@ -98,8 +98,9 @@ label[for="bt_menu"]{
 	nav a:hover{
 		font-size: 18px ;
 		text-align: center;
-		width: 100%;
+		width: 90%;
 		color: #000;
+		border-radius: 20px 20px 20px 20px;
 	}
 
 	nav ul li{
@@ -113,6 +114,9 @@ label[for="bt_menu"]{
 		margin-left: -120%;
 		transition: all .4s;
 		height: 100%;
+		width: 65%;
+		border-radius: 0px 30px 30px 0px;
+		border: 0.2px solid black;
 	}
 
 	#bt_menu:checked ~ nav{
@@ -128,7 +132,7 @@ label[for="bt_menu"]{
 	}
 
 	nav a i, .fa{
-		padding: 7px;
+		padding: 3px;
 	}
 }
 
@@ -552,6 +556,14 @@ MEDIA QUERIES
 
 
 @media screen and (max-width: 600px){
+
+	/*MENU DE NAVEGAÇÃO*/
+	nav{
+		height: 100%;
+		width: 100%;
+		border-radius: 0px 0px 0px 0px;
+		border: 0px solid black;
+	}
 
 	/* CABEÇALHO */
 	header{
