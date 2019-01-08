@@ -25,7 +25,7 @@
 	$body = $body . "===================================" . "\n";
 
 	// envia o email
-	mail($destinatario, $assunto , $body)
+	mail($destinatario, $assunto , $body);
 	?>
 
 	<script>
