@@ -1,13 +1,11 @@
 <?php
 # CAPTURANDO OQ FOI DIGITADO PARA AS VARIAVEIS
-$nome = $_POST['nome'];
-$assunto = $_POST['assunto'];
-$email = $_POST['email'];
-$msg = $_POST['mensagem'];
-
 //Obrigatorio para envio
-$remetente = "From: " . $nome;//NOME DA PESSOA QUE ESTÁ ENVIANDO O EMAIL
-$destinatario = "natanael.10@hotmail.com";//EMAIL QUE SERAR ENVIADO
+$nome = $_POST['nome'];//NOME DA PESSOA QUE ESTÁ ENVIANDO O EMAIL
+$assunto = $_POST['assunto'];//TITULO / ASSUNTO
+$email = $_POST['email']; // EMAIL DA PESSOA QUE ESTÁ ENVIANDO EMAIL
+$msg = $_POST['mensagem'];// MENSAGEN QUE VAI SER ENVIADA
+$destinatario = "natanael.10@hotmail.com";//EMAIL QUE SERAR ENVIADO A MENSAGEM
 
  // monta o e-mail na variavel $body
 
@@ -20,7 +18,7 @@ $body = $body . "Mensagem: " . "\n" . $msg . "\n\n";
 $body = $body . "===================================" . "\n";
 
 // envia o email
-if(mail($destinatario, $assunto , $body, $remetente, $email)){
+if(mail($destinatario, $assunto , $body)){
 
 	echo "<script>alert('Mensagem Enviada Com Sucesso!');</script>";
 	// redireciona para a página de obrigado
