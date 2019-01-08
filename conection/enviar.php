@@ -1,9 +1,9 @@
 <?php
 # CAPTURANDO OQ FOI DIGITADO PARA AS VARIAVEIS
 $nome = $_POST['nome'];
+$assunto = $_POST['assunto'];
 $email = $_POST['email'];
 $msg = $_POST['mensagem'];
-$assunto = $_POST['assunto'];
 
 //Obrigatorio para envio
 $remetente = "From: " . $nome;//NOME DA PESSOA QUE ESTÁ ENVIANDO O EMAIL
@@ -20,7 +20,7 @@ $body = $body . "Mensagem: " . $msg . "\n\n";
 $body = $body . "===================================" . "\n";
 
 // envia o email
-if(mail($destinatario, $assunto , $body, $remetente)){
+if(mail($destinatario, $assunto , $body, $nome, $remetente)){
 
 	echo "<script>alert('Mensagem Enviada Com Sucesso!');</script>";
 	// redireciona para a página de obrigado
@@ -28,5 +28,4 @@ if(mail($destinatario, $assunto , $body, $remetente)){
 } else{
 	echo "<script>alert('Erro ao enviar, Tente novamente!');</script>";
 }
-
 ?>
