@@ -16,11 +16,11 @@ $body = $body . "FALE CONOSCO - TESTE COMPROVATIVO" . "\n";
 $body = $body . "===================================" . "\n\n";
 $body = $body . "Nome: " . $nome . "\n";
 $body = $body . "Email: " . $email . "\n";
-$body = $body . "Mensagem: " . $msg . "\n\n";
+$body = $body . "Mensagem: " . "\n" . $msg . "\n\n";
 $body = $body . "===================================" . "\n";
 
 // envia o email
-if(mail($destinatario, $assunto , $body, $nome, $remetente)){
+if(mail($destinatario, $assunto , $body, $remetente, $email)){
 
 	echo "<script>alert('Mensagem Enviada Com Sucesso!');</script>";
 	// redireciona para a página de obrigado
