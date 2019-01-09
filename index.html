@@ -40,7 +40,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<!-- Chamadas Java Script Final do HTML -->
 	</head>
+
 	<body>
 		<!-- LOADING -->
 		<div id="content_loading">
@@ -247,11 +249,11 @@
 				<form method="post" action="conection/enviar.php" name="contactform">
 				  <input class="form-input" type="text" name="nome" placeholder="Nome Completo" required>
 				  <input class="form-input" type="text" name="assunto" placeholder="Assunto" required>
-				  <input class="boxemail" type="text" name="email" placeholder="Seu e-mail"    required>
+				  <input class="form-input" type="text" name="email" placeholder="Seu e-mail"    required>
 				  <textarea class="form-input" name="mensagem"  placeholder="Mensagem" required></textarea>
 					
 					<!-- Botão Enviar -->
-					<button class="form-input" type="submit" value="Enviar">Enviar Mensagem!</button>
+					<button class="form-input submit" type="submit" value="Enviar">Enviar Mensagem!</button>
 				</form>
 			</div>
 			<div id="contact">
@@ -278,13 +280,19 @@
 			</div>
 		</section>
 
+		<!-- BOTÃO VOLTAR AO TOPO. NO CANTO DIREITO -->
+		<div class="btn-voltar-topo jbtn-voltar">
+			<a class="btn-voltar-link jbtn-voltar-link" href="" title="">Voltar para o Topo</a>
+		</div>
+
 		<footer>
-			<p>©Copyright 2018. Ideias Criativas. Todos os direitos reservados.<br>Site Produzido por Amanda Oliveira e Natanael Luiz</p>
+			<p>©Copyright 2018. Ideias Criativas. Todos os direitos reservados.<br>Site Desenvolvido por 
+				<a href="http://surprisetech.com.br/" style="color: #FFF; font-weight: bold; ">SurpriseTech</a></p>
 		</footer>
 
 
 
-
+		<!-- ---------------------------------------------------------------------------------------------- -->
 
 		<!-- BALÕES COM INFORMAÇÕES SERVIÇOS -->
 		<div class="informacao" id="modal-infor1">
@@ -349,6 +357,8 @@
 		<script type="text/javascript" src="js/scriptEmpresa.js"></script>
 		<script type="text/javascript" src="js/scriptServicos.js"></script>
 		<script type="text/javascript" src="js/scriptLoading.js"></script>
+
+		<script type="text/javascript" src="js/scriptInicio.js"></script> <!--SCRIPT PARA BOTÃO(CANTO) VOLTAR INICIO -->
 	</body>
 </html>
 

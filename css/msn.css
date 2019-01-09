@@ -28,52 +28,62 @@
     margin: 30px 0 30px;
 }
 
+#box3 form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-input, textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
 #box3 .form-input{
     position: relative;
     margin: 10px 0;
 }
 
-#box3 form input{
-    outline: none;
-	height:40px;
-    padding:10px;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid rgba(0,0,0,.5);
-    background: transparent;
-    font-size: 18px;
+#box3 input{
+	height:45px;
+    padding: 1px;
+    width: 100%; /*Tamanho do Sublinhado dos texto*/
 }
 
-
-#box3 form textarea{
-
-    outline: none;
+#box3 textarea{
     height: 150px;
-    padding:10px;
-    box-sizing: border-box;
     width: 100%;
-    border: 1px solid rgba(0,0,0,.5);
-    background: transparent;
-    font-size: 18px;
 }
 
-#box3 form button{
+form .submit{
+    border-radius: 7px 7px 7px 7px;
+    border-color: transparent;
+    font-size: 20px;
+}
+
+#box3 button{
 	background-color: #e91e63;
     color: #FFF;
-    border: none;
     text-transform: uppercase;
     text-align: center;
     height: 40px;
     width: 100%;
 }
 
-#box3 form button:hover{
+#box3 button:hover{
 	opacity:.85;
     cursor: pointer;
     background: #0090ff;
     font-weight: bold;
 }
 
+#box3 .form-input:hover, textarea:hover{
+    border-color: #FFF;
+}
 
 /*---------------------- MOBILE -----------------------------*/
 @media screen and (max-width: 768px){
